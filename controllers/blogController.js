@@ -1,16 +1,16 @@
 // controllers/blogController.js
-exports.createBlog = (req, res) => {
+exports.createBlog = async (req, res) => {
     res.status(201).json({ message: 'Blog created successfully' });
 };
 
-exports.readBlog = (req, res) => {
+exports.readBlog = async (req, res) => {
     res.status(200).json({ message: 'Blog read successfully' });
 };
 
-exports.updateBlog = (req, res) => {
+exports.updateBlog = async (req, res) => {
     res.status(200).json({ message: 'Blog updated successfully' });
 };
 
-exports.deleteBlog = (req, res) => {
+exports.deleteBlog = async (req, res) => {
     res.status(200).json({ message: 'Blog deleted successfully' });
 };
